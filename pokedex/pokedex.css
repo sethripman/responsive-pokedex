@@ -5,6 +5,10 @@ body {
     padding: 1rem;
 }
 
+li {
+    display: inline;
+}
+
 .box {
   display: flex;
   justify-content: center;
