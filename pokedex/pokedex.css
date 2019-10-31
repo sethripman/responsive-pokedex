@@ -9,6 +9,18 @@ li {
     display: inline;
 }
 
+.pokeItem {
+    display: inline-flex;
+    border: 1px black solid;
+    font-size: 2em;
+    height: 300px;
+    width: 300px;
+    margin: 5px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 .box {
   display: flex;
   justify-content: center;
