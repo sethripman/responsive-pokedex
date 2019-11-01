@@ -46,3 +46,56 @@ h1 {
 .pokeItemImage {
     height: 150px;
 }
+
+.pokeViewItem {
+    display: grid;
+    width: 600px;
+    height: 500px;
+    grid-template-areas: 
+            "back . ."
+            "ht name wt"
+            "e1 pimg e2"
+            "radar radar radar";
+    grid-template-columns: 1fr 4fr 1fr ;
+    grid-template-rows: 1fr 4fr 4fr;
+    
+}
+
+.pokeViewItem > .backButton {
+    grid-area: back;
+}
+
+.pokeViewItem > .pokeViewHeight {
+    grid-area: ht;
+}
+
+.pokeViewItem > .pokeViewName {
+    grid-area: name;
+}
+
+.pokeViewItem > .pokeViewWeight {
+    grid-area: wt;
+}
+
+.pokeViewItem > .pokeViewElement1 {
+    grid-area: e1;
+}
+
+.pokeViewItem > .pokeViewElement2 {
+    grid-area: e2;
+}
+
+.pokeViewItem > .pokeViewImage {
+    grid-area: pimg;
+}
+
+.pokeViewItem > .pokeViewRadar {
+    grid-area: radar;
+}
+
+@media (min-width:660px) {
+    
+
+
+
+}
