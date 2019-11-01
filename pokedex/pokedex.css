@@ -119,7 +119,7 @@ h1 {
 @media (max-width:660px) {
     #pokeList {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: .6fr;
         grid-gap: 10px;
       } 
 
