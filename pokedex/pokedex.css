@@ -5,81 +5,42 @@ body {
     padding: 1rem;
 }
 
-li {
+h1 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 54px;
+    text-align: center;
+  }
+
+.search-list li {
     display: inline;
 }
 
+.container {
+    padding: 40px;
+    margin: 0 auto;
+}
+
 .pokeItem {
-    display: inline-flex;
-    border: 1px black solid;
-    font-size: 2em;
-    height: 300px;
-    width: 300px;
-    margin: 5px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-  height: 200px;
-  width: 200px;
-  border: 3px solid black;
-}
-
-.one {
-  background: steelblue;
-  color: white;
-}
-
-.two {
-  background: orange;
-  color: white;
-}
-
-
-@media (min-width:960px) {
-  .one {
-    background: lightsteelblue;
+    list-style: none;
+    padding: 40px;
+    background-color: #f4f4f4;
+    color: #222;
+    text-align: center;
+  }
+  
+  #pokeList {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-gap: 20px;
+      padding-inline-start: 0;
   }
 
-  .two {
-    background: coral;
+  .pokeItemName {
+    font-size: 32px;
+    margin-bottom: 0;
   }
-}
-
-
-.search-inputs-mobile {
-
-}
-
-.pokelist-mobile {
-    padding-inline-start: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 20px;
-}
-
-.pokeitem-mobile {
-
-}
-
-.search-inputs-browser {
-    
-}
-
-.pokelist-browser {
-    padding-inline-start: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 20px;
-}
-
-.pokeitem-browser {
-
-}
-
+  
+  .pokeItemImage {
+    height: 180px;
+  }
