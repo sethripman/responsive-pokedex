@@ -1,0 +1,144 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #222;
+    padding: 1rem;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 54px;
+    text-align: center;
+}
+
+.search-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-list li {
+    display: inline;
+}
+
+.container {
+    padding: 40px;
+    margin: 0 auto;
+}
+
+#pokeList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding-inline-start: 0em;
+    grid-gap: 10px;
+  }
+
+.pokeItem {
+    list-style: none;
+    padding: 40px;
+    background-color: #f4f4f4;
+    color: #222;
+    text-align: center;
+    background-color:rgb(248, 248, 176);
+}
+  
+.pokeItemName {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+  
+.pokeItemImage {
+    height: 150px;
+}
+
+.pokeViewItem {
+    display: grid;
+    width: 600px;
+    height: 500px;
+    grid-template-areas: 
+            "back . ."
+            "ht name wt"
+            "e1 pimg e2"
+            "radar radar radar";
+    grid-template-columns: 1fr 4fr 1fr ;
+    grid-template-rows: 1fr 4fr 4fr;
+    
+}
+
+.pokeViewItem > .backButton {
+    grid-area: back;
+    align-self: center;
+    justify-self: center;
+}
+
+.pokeViewItem > .pokeViewHeight {
+    grid-area: ht;
+    align-self: center;
+    justify-self: center;
+}
+
+.pokeViewItem > .pokeViewName {
+    grid-area: name;
+    align-self: center;
+    justify-self: center;
+}
+
+.pokeViewItem > .pokeViewWeight {
+    grid-area: wt;
+    align-self: center;
+    justify-self: center;
+}
+
+.pokeViewItem > .pokeViewElement1 {
+    grid-area: e1;
+    align-self: center;
+    justify-self: center;
+    background-color: yellow;
+}
+
+.pokeViewItem > .pokeViewElement2 {
+    grid-area: e2;
+    align-self: center;
+    justify-self: center;
+    background-color: grey;
+}
+
+.pokeViewItem > .pokeViewImage {
+    grid-area: pimg;
+    align-self: center;
+    justify-self: center;
+}
+
+.pokeViewItem > .pokeViewRadar {
+    grid-area: radar;
+    align-self: center;
+    justify-self: center;
+}
+
+@media (max-width:660px) {
+    #pokeList {
+        display: grid;
+        grid-template-columns: .6fr;
+        grid-gap: 10px;
+      } 
+
+      .pokeItem {
+          list-style: none;
+          padding: 40px;
+          background-color: #f4f4f4;
+          color: #222;
+          text-align: center;
+          background-color:rgb(248, 248, 176);
+      }
+        
+      .pokeItemName {
+          margin-top: 1em;
+          margin-bottom: 1em;
+          font-size: 3em;
+      }
+        
+      .pokeItemImage {
+          height: 250px;
+      }
+}
