@@ -10,19 +10,19 @@ class PokeItem extends Component {
                         <img class="pokeItemImage" src=${pokemon.url_image}>
                     </div>
                     <div class="pokeItemName">
-                        ${pokemon.pokemon}
+                        Name: ${pokemon.pokemon}
                     </div>
                     <div class="pokeViewHeight">
-                        ${pokemon.height} 
+                        ${pokemon.height} meters
                     </div>
                     <div class="pokeViewWeight">
-                        ${pokemon.weight}
+                        ${pokemon.weight} kg
                     </div>
                     <div class="pokeViewElement1">
-                        ${pokemon.type_1}
+                        Type 1 = ${pokemon.type_1}
                     </div>
                     <div class="pokeViewElement2">
-                        ${pokemon.type_2}
+                        Type 2 = ${pokemon.type_2}
                     </div>
                 </li>
         `;

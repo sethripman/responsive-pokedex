@@ -52,13 +52,9 @@ class App extends Component {
                 <!-- Header goes here -->
         
                 <main>
-                    <section class="options-section">
-                        <!-- Filter Images goes here -->
-                    </section>
-
-                    <section class="list-section">
-                        <!-- ImageList goes here -->
-                    </section>
+                    <div class="pokeList">
+                        <!-- PokeList goes here -->
+                    </div>
                 </main>
             </div>
         `;
