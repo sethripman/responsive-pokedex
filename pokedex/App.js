@@ -1,8 +1,8 @@
 import Component from '../Component.js';
 import Header from './Header.js';
-import ImageList from './ImageList.js';
+import PokeList from './PokeList.js/index.js';
 import FilterImages from './FilterImages.js';
-import images from '../data/images.js';
+import pokemon from '../assets/sample-pokemon.js';
 
 class App extends Component {
 
@@ -12,17 +12,17 @@ class App extends Component {
         dom.prepend(headerDOM);
 
         const props = {
-            images: images
+            pokemon: pokemon
         };
 
-        const imageList = new ImageList(props);
-        const imageListDOM = imageList.renderDOM();
+        const pokeList = new PokeList(props);
+        const pokeListDOM = pokeList.renderDOM();
 
-        const listSection = dom.querySelector('.list-section');
-        listSection.appendChild(imageListDOM);
+        const listSection = dom.querySelector('.pokeList');
+        listSection.appendChild(pokeListDOM);
 
 
-        const filterImages = new FilterImages({
+        /*const filterImages = new FilterImages({
             images: images,
             onFilter: (imageType) => {
                 let filteredImages;
@@ -43,7 +43,7 @@ class App extends Component {
         const filterImagesDOM = filterImages.renderDOM();
 
         const optionsSection = dom.querySelector('.options-section');
-        optionsSection.appendChild(filterImagesDOM);
+        optionsSection.appendChild(filterImagesDOM);*/
 
     }
 
