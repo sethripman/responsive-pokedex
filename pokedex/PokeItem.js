@@ -3,6 +3,7 @@ import Component from '../Component.js';
 class PokeItem extends Component {
     renderHTML() {
         const pokemon = this.props.pokemon;
+        const upperCaseName = pokemon.pokemon.replace(/^\w/, letter => letter.toUpperCase());
 
         return /*html*/`
         <li class="pokeItem">
@@ -10,7 +11,7 @@ class PokeItem extends Component {
                         <img class="pokeItemImage" src=${pokemon.url_image}>
                     </div>
                     <div class="pokeItemName">
-                        Name: ${pokemon.pokemon}
+                        ${upperCaseName}
                     </div>
                     <div class="pokeViewHeight">
                         ${pokemon.height} meters
