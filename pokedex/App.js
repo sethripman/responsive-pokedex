@@ -1,7 +1,6 @@
 import Component from '../Component.js';
 import Header from './Header.js';
-import PokeList from './PokeList.js/index.js';
-import FilterImages from './FilterImages.js';
+import PokeList from './PokeList.js';
 import pokemon from '../assets/sample-pokemon.js';
 
 class App extends Component {
