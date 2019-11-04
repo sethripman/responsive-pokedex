@@ -21,5 +21,5 @@ test('time to test a function', function(assert) {
 
     //Assert
     // Make assertions about what is expected valid result
-    assert.equal(newHeaderDOM, expected);
+    assert.deepEqual(newHeaderDOM, expected);
 });
